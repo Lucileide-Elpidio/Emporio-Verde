@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Empório Verde :: Àrea do cliente :: Dados Pessoais</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column wrapper">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-success border-bottom shadow-sm mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="../Home/index.html"><b>Empório Verde</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../Home/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../Contato/index.html">Contatos</a>
+                        </li>
+                    </ul>
+                    <div class="align-self-end">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link  text-white" href="../ClientePedidos/index.html">Logado como <b>Lucileide</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../Login/index.html">Sair</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../Carrinho/index.html">
+                                    <span class="badge rounded-pill bg-light text-success position-absolute ms-3 mt-0"
+                                        title="5 produto(s) no carrinho">
+                                        <small>5</small>
+                                    </span>
+                                    <i class="bi-cart" style="font-size: 24px; line-height: 24px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <main class="flex-fill">
+            <div class="container">
+                <h1 class="text-center mb-4">Minha Conta</h1>
+                <div class="row gx-3">
+                    <div class="col-4">
+                        <div class="list-group">
+                            <a href="../ClienteDados/index.html" class="list-group-item 
+                            list-group-item-action bg-success text-light">
+                                <i class="bi-person fs-6"></i> Dados Pessoais
+                            </a>
+
+                            <a href="../ClienteContato/index.html" class="list-group-item 
+                            list-group-item-action">
+                                <i class="bi-mailbox fs-6"></i> Contatos
+                            </a>
+
+                            <a href="../ClienteEndereco/index.html" class="list-group-item 
+                            list-group-item-action">
+                                <i class="bi-house-door fs-6"></i> Endereço
+                            </a>
+
+                            <a href="../ClientePedidos/index.html" class="list-group-item 
+                            list-group-item-action">
+                                <i class="bi-truck fs-6"></i> Pedidos
+                            </a>
+
+                            <a href="../ClienteFavoritos/index.html" class="list-group-item 
+                            list-group-item-action">
+                                <i class="bi-heart fs-6"></i> Favoritos
+                            </a>
+
+                            <a href="../ClienteSenha/index.html" class="list-group-item 
+                            list-group-item-action">
+                                <i class="bi-lock fs-6"></i> Alterar Senha
+                            </a>
+
+                            <a href="../Home/index.html" class="list-group-item 
+                            list-group-item-action">
+                                <i class="bi-door-open fs-6"></i> Sair
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <form class="action">
+                            <div class="form-floating mb-3">
+                                <input type="text" id="txtNome" class="form-control" placeholder=" " autofocus>
+                                <label for="txtNome">Nome</label>
+                            </div>
+
+                            <div class="form-floating mb-3 col-md-6 col-xl-4">
+                                <input type="text" id="txtCPF" class="form-control" placeholder=" " autofocus>
+                                <label for="txtCPf">CPF</label>
+                            </div>
+
+                            <div class="form-floating mb-3 col-md-6 col-xl-4">
+                                <input type="date" id="txtDataNascimento" class="form-control" placeholder=" "
+                                    autofocus>
+                                <label for="txtDataNascimento">Data de Nascimento</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="border-top text-muted bg-light">
+            <div class="container">
+                <div class="row py-3">
+
+                    <div class="col-12 col-md-4 text-center">
+                        &copy; 2023-Empório Verde Ltda ME<br>
+                        Rua Santa Luzia,173, Embu das Artes/SP<br>
+                        CNPJ 19.431.639/0001-04
+                    </div>
+
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="../Privacidade/index.html" class="text-decoration-none text-dark">
+                            Política de Privacidade
+                        </a><br>
+
+                        <a href="../Termos/index.html" class="text-decoration-none text-dark">
+                            Termos de uso
+                        </a><br>
+
+                        <a href="../QuemSomos/index.html" class="text-decoration-none text-dark">
+                            Quem Somos
+                        </a><br>
+
+                        <a href="../Trocas/index.html" class="text-decoration-none text-dark">
+                            Trocas e Devoluções
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="../Contato/index.html" class="text-decoration-none text-dark">
+                            Contato pelo Site
+                        </a><br>
+
+                        Email:<a href="mailto: relacionamento@emporioverde.com" class="text-decoration-none text-dark">
+                            relacionamento@emporioverde.com
+                        </a><br>
+
+                        Telefone:<a href="phone:11988269520" class="text-decoration-none text-dark">
+                            (11) 988269520
+                        </a>
+                    </div>
+                </div>
+        </footer>
+    </div>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
