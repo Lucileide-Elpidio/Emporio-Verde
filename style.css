@@ -1,6 +1,6 @@
 body {
 
-    min-width: 372px;
+    min-width: 320px;
     background: #a4e796;
     font-family: 'Roboto', sans-serif;
 }
@@ -75,3 +75,4 @@ label .text-dark {
         margin-top: 1rem;
     }
 }
+
